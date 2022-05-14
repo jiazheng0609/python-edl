@@ -158,7 +158,7 @@ class CommentMatcher(Matcher):
     """
 
     def __init__(self):
-        Matcher.__init__(self, '\*\s*(.+)')
+        Matcher.__init__(self, '\|C:(\S+)') # for Davinci Resolve, marker color message stores here
 
     def apply(self, stack, line):
         #print line
